@@ -5,6 +5,7 @@ body { background-color: var(--cor-primaria); color: var(--cor-de-fundo); displa
 .main-container { margin-top: 4rem; background-color: var(--branco); color: var(--cor-secundaria); padding: 1.75rem; border-radius: .25rem; font-size: 1.5rem; box-shadow: 8px 8px 0 0 var(--cor-de-fundo) }
 .main-container textarea { margin-top: 1.75rem; width: 100%; padding: 10px; border: none; border-bottom: 2px solid var(--cor-primaria); font-size: 1.25rem; outline: none; resize: vertical; transition: border .3s ease-in-out }
 .main-container textarea:focus { animation: outlineAnimation .3s forwards }
+.data-form h4{ text-align: center;}
 .generate-qr { color: var(--branco); border: none; background-color: var(--cor-de-fundo); padding: .5rem; font-size: 1.25rem; font-weight: bold; border-radius: .25rem; margin-top: 1rem; cursor: pointer; transition: .75s }
 .generate-qr:hover { background-color: var(--branco); color: var(--cor-de-fundo); outline: 1px solid var(--cor-de-fundo); box-shadow: 5px 5px 0 0 var(--cor-de-fundo); transition: .75s }
 .erease-qr { color: var(--branco); border: none; background-color: var(--cor-primaria); padding: .5rem; font-size: 1.25rem; font-weight: bold; border-radius: .25rem; margin-top: 1rem; cursor: pointer; transition: .75s }
@@ -12,8 +13,15 @@ body { background-color: var(--cor-primaria); color: var(--cor-de-fundo); displa
 .result-box { margin: 1.75rem auto 0; width: 45%; border-radius: .5rem; font-size: 1.25rem; padding: .75rem; text-align: center; font-weight: bold; outline: 1px solid rgba(0,29,61,.2); color: rgba(0,8,20,.4); min-height: 300px }
 .fa-qrcode { margin-top: 4.25rem; font-size: 7rem }
 .qrcode-img { padding-top: .75rem; opacity: .7 }
+.placeholder-txt { cursor: default; user-select: none;}
 .action-btns { display: flex; justify-content: flex-end; gap: 1rem; color: #1b1b1b }
 .contacts { display: flex; gap: 4rem; align-items: center; justify-content: center; font-size: 3rem; margin-block: 2rem }
 .contact-icon { background-color:var(--cor-de-fundo); color: rgba(253,255,252,.9); padding: .5rem; border-radius: .5rem; transition: .5s }
 .contact-icon:hover { background-color: rgba(253,255,252,.9); color: var(--cor-de-fundo); transition: .5s; box-shadow: 8px 8px 0 0 var(--cor-de-fundo) }
 @keyframes outlineAnimation { 0% { outline: 2px solid rgba(0,128,255,0) } 100% { outline: 2px solid var(--cor-primaria) } }
+@media(max-width: 1024px){
+    .main-container, .title-container{ max-width: 95vw; }
+    .main-container textarea{ font-size: 1.1rem; }
+    .title-container h1{ font-size: 2rem; }
+    .result-box{ width: 100%; }
+}
