@@ -3,7 +3,7 @@ import React from "react";
 const PlaceholderText = () => {
   return (
     <>
-      <p>O resultado aparecerá aqui...</p>
+      <p className="placeholder-txt">O resultado aparecerá aqui...</p>
       <i class="fa-solid fa-qrcode"></i>
     </>
   );
