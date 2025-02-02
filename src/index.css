@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'IBM Plex Mono';
+}
+
+/* Animações */
+@keyframes fadeInDown {
+    from{
+        opacity: 0.5;
+        transform: translateY(-60px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeInUp {
+    from{
+        opacity: 0.5;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeInUpImg {
+  from {
+      transform: scale(0.5);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1);
+      opacity: 0.7;
+  }
+}
+
+@keyframes popUp {
+    from{
+        transform: translateY(30px);
+        scale: 0.8;
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0.90);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+.popIn{
+    animation: popIn 1.15s !important;
+}
+
+.fadeInDown{
+    animation: fadeInDown 0.85s !important;
+}
+
+.fadeInUp{
+    animation: fadeInUp 1s !important;
+}
+.fadeInUpImg{
+    animation: fadeInUpImg 1.5s !important;
+}
+
+.popUp{
+    animation: popUp 1.5s !important;
+}
